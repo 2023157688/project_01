@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+             border: 3px solid red;
+        }
+        .fa {
+            position: relative;
+            margin: 50px auto;
+            width: 800px;
+            height: 800px;
+        }
+        .son {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 600px;
+            height: 600px;
+        }
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            animation: run1 3s infinite;
+        }
+        @keyframes run1 {
+            25%{
+                transform: translate(700px);
+            }
+            50%{
+                transform: translate(700px,700px);
+            }
+            75% {
+                transform: translate(0,700px);
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fa">
+        <img src="./images/tz.jpeg" alt="">
+        <div class="son">
+
+        </div>
+    </div>
+</body>
+</html>
